@@ -266,7 +266,7 @@ namespace Puppet
 
         // Spine (spine/chest/upper chest) rotation
         Quaternion SpineRotation { get {
-            var rot = Quaternion.AngleAxis(_spineBend, Vector3.forward);
+            var rot = Quaternion.AngleAxis(_spineBend, Vector3.right);
             rot *= Noise.Rotation(_noise, math.radians(_spineRotationNoise), 2);
             return rot;
         } }
@@ -281,14 +281,13 @@ namespace Puppet
             if (isLeft) pos.x *= -1;
 
             // Apply the body (hip) transform.
-            pos = _animator.bodyRotation * pos + _animator.bodyPosition;
+            pos = _chestMatrix.MultiplyPoint(pos);
 
             // Add noise.
             pos += Vector3.Scale(Noise.Float3(_noise, (uint)(4 + index)), _handPositionNoise);
 
             // Clamping in the local space of the chest bone.
             pos = _chestMatrixInv * new Vector4(pos.x, pos.y, pos.z, 1);
-            pos.y = Mathf.Max(pos.y, 0.2f);
             pos.z = Mathf.Max(pos.z, 0.2f);
             pos = _chestMatrix * new Vector4(pos.x, pos.y, pos.z, 1);
 

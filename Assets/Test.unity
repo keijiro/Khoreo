@@ -204,21 +204,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74eacbddd55ba8c47a31b3087d99f2b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _footDistance: 0.45
-  _stepFrequency: 0.5
-  _stepHeight: 0.1
-  _stepAngle: 120
+  _footDistance: 0.8
+  _stepFrequency: 0.1
+  _stepHeight: 0.3
+  _stepAngle: 180
   _maxDistance: 2
-  _hipHeight: 0.8
-  _hipPositionNoise: 0.3
-  _hipRotationNoise: 40
-  _spineBend: -5
-  _spineRotationNoise: {x: 30, y: 30, z: 30}
-  _handPosition: {x: 0.3, y: 0.28, z: 0.26}
-  _handPositionNoise: {x: 0.3, y: 0.5, z: 0.3}
+  _hipHeight: 0.75
+  _hipPositionNoise: 0.2
+  _hipRotationNoise: 60
+  _spineBend: 10
+  _spineRotationNoise: {x: 25, y: 30, z: 25}
+  _handPosition: {x: 0.2, y: 0.1, z: 0.24}
+  _handPositionNoise: {x: 0.2, y: 0.3, z: 0.1}
   _headMove: 3
-  _noiseFrequency: 0.5
-  _randomSeed: 123
+  _noiseFrequency: 0.3
+  _randomSeed: 1
 --- !u!1 &183709794
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,7 +940,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877443263}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -980,7 +980,7 @@ VisualEffect:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877443263}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Asset: {fileID: 8926484042661614526, guid: b860fefb46ba54d4caba360a23383227, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
