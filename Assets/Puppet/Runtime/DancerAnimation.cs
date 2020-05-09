@@ -33,6 +33,8 @@ public sealed partial class Dancer
 
     #region Utility functions
 
+    static float3 Up => math.float3(0, 1, 0);
+
     static float  deg2rad(float  x) => math.radians(x);
     static float3 deg2rad(float3 x) => math.radians(x);
 
@@ -66,8 +68,7 @@ public sealed partial class Dancer
       => quaternion.RotateY(deg2rad(StepAngle * StepParam));
 
     // The original height of the foot point
-    float3 FootBias
-      => math.float3(0, _animator.leftFeetBottomHeight, 0);
+    float3 FootBias => Up * _animator.leftFeetBottomHeight;
 
     // Foot position
     float3 GetFootPosition(Side side)
@@ -85,10 +86,10 @@ public sealed partial class Dancer
         rp *= math.cos(StepParam * math.PI * 2) * 0.3f + 0.7f;
 
         // Vertical move: Sine wave with smooth step
-        var up = math.sin(math.smoothstep(0, 1, StepParam) * math.PI);
-        up *= _stepHeight;
+        var offs = math.sin(math.smoothstep(0, 1, StepParam) * math.PI);
+        offs *= _stepHeight;
 
-        return thatFoot + rp + math.float3(0, up, 0) + FootBias;
+        return thatFoot + rp + Up * offs + FootBias;
     }
 
     float3 LeftFootPosition => GetFootPosition(Side.Left);
@@ -102,6 +103,20 @@ public sealed partial class Dancer
     float3 CurrentStepDestination
       => _feet[(int)PivotSide]
          + math.mul(StepRotationFull, CurrentStepDirection) * _footDistance;
+
+    // Rotation of the pivot foot
+    quaternion PivotFootRotation
+      => quaternion.LookRotation
+           (math.cross(RightFootPosition - LeftFootPosition, Up), Up);
+
+    // Weight parameter for each foot
+    float GetFootRotationWeight(Side side)
+    {
+        var p = (_step + (int)side) % 2;
+        var down = math.smoothstep(1, 1.1f, p);
+        var up = math.smoothstep(1.9f, 2, p);
+        return math.max(1 - down, up) * 0.9f;
+    }
 
     #endregion
 
@@ -135,10 +150,10 @@ public sealed partial class Dancer
         right = math.normalize(right);
 
         // Horizontal rotation
-        var r2 = quaternion.LookRotation(right, math.float3(0, 1, 0));
+        var r2 = quaternion.LookRotation(right, Up);
 
         // Noise
-        var r3 = Noise.Rotation(_noise, deg2rad(_hipRotationNoise), 1);
+        var r3 = Noise.Rotation(_noise, deg2rad(_hipRotationNoise), 0);
 
         return math.mul(math.mul(r1, r2), r3);
     }
@@ -154,7 +169,7 @@ public sealed partial class Dancer
         var r1 = quaternion.RotateX(deg2rad(_spineBend));
 
         // Noise
-        var r2 = Noise.Rotation(_noise, deg2rad(_spineRotationNoise), 2);
+        var r2 = Noise.Rotation(_noise, deg2rad(_spineRotationNoise), 1);
 
         return math.mul(r1, r2);
     }
@@ -166,11 +181,11 @@ public sealed partial class Dancer
         var pos = (float3)_handPosition;
         if (side == Side.Left) pos.x *= -1;
 
+        // Noise
+        pos += Noise.Float3(_noise, 2 + (uint)side) * _handPositionNoise;
+
         // Chest transform
         pos = math.mul(_chestMatrix, math.float4(pos, 1)).xyz;
-
-        // Noise
-        pos += Noise.Float3(_noise, 4 + (uint)side) * _handPositionNoise;
 
         return pos;
     }
@@ -178,11 +193,17 @@ public sealed partial class Dancer
     float3 LeftHandPosition => GetHandPosition(Side.Left);
     float3 RightHandPosition => GetHandPosition(Side.Right);
 
+    // Finger rotations
+    quaternion GetFingerRotation(Side side)
+      => quaternion.Euler
+           (Noise.Float3(_noise, 4 + (uint)side)
+            * math.float3(0.7f, 0.3f, 0.3f) + math.float3(0.35f, 0, 0));
+
     // Look at position (for head movement)
     float3 GetLookAtPosition()
     {
         // Z plane constraint noise
-        var pos = Noise.Float3(_noise, 3) * _headMove;
+        var pos = Noise.Float3(_noise, 6) * _headMove;
         pos.z = 2;
 
         // Body transform

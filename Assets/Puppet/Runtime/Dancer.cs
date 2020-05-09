@@ -64,9 +64,16 @@ namespace Puppet
             // Feet
             _animator.SetIKPosition(AvatarIKGoal.LeftFoot, LeftFootPosition);
             _animator.SetIKPosition(AvatarIKGoal.RightFoot, RightFootPosition);
-
             _animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot, 1);
             _animator.SetIKPositionWeight(AvatarIKGoal.RightFoot, 1);
+
+            var footr = PivotFootRotation;
+            var lfw = GetFootRotationWeight(Side.Left);
+            var rfw = GetFootRotationWeight(Side.Right);
+            _animator.SetIKRotation(AvatarIKGoal.LeftFoot, footr);
+            _animator.SetIKRotation(AvatarIKGoal.RightFoot, footr);
+            _animator.SetIKRotationWeight(AvatarIKGoal.LeftFoot, lfw);
+            _animator.SetIKRotationWeight(AvatarIKGoal.RightFoot, rfw);
 
             // Body (hip)
             _animator.bodyPosition = GetBodyPosition();
@@ -81,9 +88,22 @@ namespace Puppet
             // Hands
             _animator.SetIKPosition(AvatarIKGoal.LeftHand, LeftHandPosition);
             _animator.SetIKPosition(AvatarIKGoal.RightHand, RightHandPosition);
-
             _animator.SetIKPositionWeight(AvatarIKGoal.LeftHand, 1);
             _animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
+
+            // Left wrist and fingers
+            var lfinger = GetFingerRotation(Side.Left);
+            _animator.SetBoneLocalRotation(HumanBodyBones.LeftHand, lfinger);
+            _animator.SetBoneLocalRotation(HumanBodyBones.LeftIndexProximal, lfinger);
+            _animator.SetBoneLocalRotation(HumanBodyBones.LeftIndexIntermediate, lfinger);
+            _animator.SetBoneLocalRotation(HumanBodyBones.LeftIndexDistal, lfinger);
+
+            // Right wrist and fingers
+            var rfinger = GetFingerRotation(Side.Right);
+            _animator.SetBoneLocalRotation(HumanBodyBones.RightHand, rfinger);
+            _animator.SetBoneLocalRotation(HumanBodyBones.RightIndexProximal, rfinger);
+            _animator.SetBoneLocalRotation(HumanBodyBones.RightIndexIntermediate, rfinger);
+            _animator.SetBoneLocalRotation(HumanBodyBones.RightIndexDistal, rfinger);
 
             // Head
             _animator.SetLookAtPosition(GetLookAtPosition());
