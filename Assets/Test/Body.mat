@@ -9,11 +9,11 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Body
   m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
-  m_ShaderKeywords: _NORMALMAP_TANGENT_SPACE
+  m_ShaderKeywords: _MATERIAL_FEATURE_IRIDESCENCE _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   disabledShaderPasses:
   - DistortionVectors
@@ -132,7 +132,7 @@ Material:
     - _DetailNormalScale: 1
     - _DetailSmoothnessScale: 1
     - _DiffusionProfile: 0
-    - _DiffusionProfileHash: 0
+    - _DiffusionProfileHash: 3.488719
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
@@ -173,9 +173,9 @@ Material:
     - _InvTilingScale: 1
     - _Ior: 1.5
     - _IridescenceMask: 1
-    - _IridescenceThickness: 1
+    - _IridescenceThickness: 0.7
     - _LinkDetailsWithBase: 1
-    - _MaterialID: 1
+    - _MaterialID: 3
     - _Metallic: 0
     - _NormalMapSpace: 0
     - _NormalScale: 1
@@ -187,7 +187,7 @@ Material:
     - _ReceivesSSR: 1
     - _RefractionModel: 0
     - _SSRefractionProjectionModel: 0
-    - _Smoothness: 0.75
+    - _Smoothness: 0.5
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
     - _SpecularAAScreenSpaceVariance: 0.1
@@ -209,7 +209,7 @@ Material:
     - _SurfaceType: 0
     - _TexWorldScale: 1
     - _TexWorldScaleEmissive: 1
-    - _Thickness: 1
+    - _Thickness: 0.082
     - _TransmissionEnable: 1
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
@@ -229,10 +229,11 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _BaseColor: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 0.1132075, g: 0.1132075, b: 0.1132075, a: 1}
+    - _DiffusionProfileAsset: {r: -8.053417e-27, g: -5.584154e-36, b: 1.08212715e+24,
+        a: 0.013982096}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
