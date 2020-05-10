@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 145274444}
   - component: {fileID: 145274443}
   m_Layer: 0
-  m_Name: Environment
+  m_Name: Stream
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
