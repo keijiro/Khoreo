@@ -13,7 +13,9 @@ namespace Khoreo
         float _timer;
 
         void OnValidate()
-          => _target.Owner = transform;
+        {
+            if (_target != null) _target.Owner = transform;
+        }
 
         void Update()
         {

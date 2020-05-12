@@ -21,10 +21,7 @@ namespace Khoreo
             _action.performed -= OnPerformed;
         }
 
-        void OnPerformed(InputAction.CallbackContext ctx)
-        {
-            _event.Invoke();
-        }
+        void OnPerformed(InputAction.CallbackContext ctx) => _event.Invoke();
     }
 }
 
