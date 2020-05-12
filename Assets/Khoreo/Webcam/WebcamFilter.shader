@@ -8,7 +8,6 @@ Shader "Hidden/Khoreo/Webcam/Screen"
     HLSLINCLUDE
 
     #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl"
-    #include "Packages/jp.keijiro.noiseshader/Shader/SimplexNoise2D.hlsl"
 
     float min_xy(float2 v) { return min(v.x, v.y); }
     float max_xy(float2 v) { return max(v.x, v.y); }
