@@ -10,8 +10,8 @@ namespace Khoreo
 
         [SerializeField] AnimationCurve _curve = DefaultCurve;
         [SerializeField] float _speed = 1;
-        [SerializeField] InputAction _trigger = null;
         [SerializeField] Volume _volume = null;
+        [SerializeField] InputAction _trigger = null;
 
         #endregion
 
