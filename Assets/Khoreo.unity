@@ -1631,6 +1631,8 @@ GameObject:
   - component: {fileID: 877443266}
   - component: {fileID: 877443265}
   - component: {fileID: 877443264}
+  - component: {fileID: 877443268}
+  - component: {fileID: 877443267}
   m_Layer: 0
   m_Name: Wig VFX
   m_TagString: Untagged
@@ -1693,7 +1695,10 @@ VisualEffect:
   m_ResetSeedOnPlay: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 0
+        m_Name: Emission
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -1737,6 +1742,37 @@ Transform:
   m_Father: {fileID: 1809453687}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &877443267
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877443263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2091ac4b848396c4586dba9485bea90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _property:
+    m_Name: Emission
+  Target: {fileID: 1448116055}
+--- !u!114 &877443268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877443263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 877443267}
+  m_VisualEffect: {fileID: 877443265}
 --- !u!1 &910259925
 GameObject:
   m_ObjectHideFlags: 0
@@ -2113,7 +2149,7 @@ VisualEffect:
       m_Array: []
     m_Uint:
       m_Array:
-      - m_Value: 482
+      - m_Value: 456
         m_Name: SampleCount
         m_Overridden: 1
       - m_Value: 4096
@@ -2730,7 +2766,7 @@ MonoBehaviour:
   _filterType: 0
   _autoGain: 1
   _gain: 6
-  _dynamicRange: 12
+  _dynamicRange: 20
   _smoothFall: 1
   _fallSpeed: 0.3
   _propertyBinders: []
