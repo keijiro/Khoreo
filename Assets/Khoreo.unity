@@ -1845,6 +1845,8 @@ GameObject:
   - component: {fileID: 877443264}
   - component: {fileID: 877443268}
   - component: {fileID: 877443267}
+  - component: {fileID: 877443269}
+  - component: {fileID: 877443270}
   m_Layer: 0
   m_Name: Wig VFX
   m_TagString: Untagged
@@ -1911,6 +1913,9 @@ VisualEffect:
       - m_Value: 0
         m_Name: Emission
         m_Overridden: 1
+      - m_Value: 0
+        m_Name: Flare
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -1967,7 +1972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _property:
-    m_Name: Emission
+    m_Name: EmissionIntensity
   Target: {fileID: 1448116055}
 --- !u!114 &877443268
 MonoBehaviour:
@@ -1984,7 +1989,39 @@ MonoBehaviour:
   m_ExecuteInEditor: 0
   m_Bindings:
   - {fileID: 877443267}
+  - {fileID: 877443269}
+  - {fileID: 877443270}
   m_VisualEffect: {fileID: 877443265}
+--- !u!114 &877443269
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877443263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2091ac4b848396c4586dba9485bea90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _property:
+    m_Name: FlareSpawnRate
+  Target: {fileID: 1448116055}
+--- !u!114 &877443270
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877443263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c17c1a4cc7177fd4faa3e8593b5b102f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _property:
+    m_Name: FlareSpawnSwitch
+  Target: {fileID: 1364651567}
 --- !u!1 &910259925
 GameObject:
   m_ObjectHideFlags: 0
@@ -2929,7 +2966,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1364651565}
-  - component: {fileID: 1364651568}
   - component: {fileID: 1364651567}
   - component: {fileID: 1364651566}
   m_Layer: 0
@@ -2990,68 +3026,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1364651564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb3b59bdb54641d42b5d3d49f1f328bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _state: 1
   _action:
     m_Name: Action
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 52004b4a-ac96-4c7c-900e-1c3bdb1be336
+    m_Id: 1eeb7999-c0ba-4950-b589-13ff9f51e5e0
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 34d630c1-8ffb-48f4-a555-d3a1fb13b175
-      m_Path: <Keyboard>/2
+      m_Id: c1270436-0d34-41d0-b1d3-1b3c5eb9cc64
+      m_Path: <Keyboard>/a
       m_Interactions: 
       m_Processors: 
       m_Groups: 
       m_Action: Action
       m_Flags: 0
-  _event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1364651566}
-        m_MethodName: set_targetValue
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 2
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1364651568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1364651564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb3b59bdb54641d42b5d3d49f1f328bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _action:
-    m_Name: Action
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 52004b4a-ac96-4c7c-900e-1c3bdb1be336
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 34d630c1-8ffb-48f4-a555-d3a1fb13b175
-      m_Path: <Keyboard>/1
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Action
-      m_Flags: 0
-  _event:
+  _offEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1364651566}
@@ -3062,6 +3057,20 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0.5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1364651566}
+        m_MethodName: set_targetValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 2
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
