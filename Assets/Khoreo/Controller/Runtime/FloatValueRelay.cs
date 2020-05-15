@@ -28,6 +28,9 @@ namespace Khoreo
         public float targetValue
           { get => _targetValue; set => _targetValue = value; }
 
+        public float currentValue
+          { get => _currentValue; set => _currentValue = value; }
+
         #endregion
 
         #region MonoBehaviour

@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 namespace Khoreo
 {
-    public sealed class InputActionEvent : MonoBehaviour
+    public sealed class Trigger : MonoBehaviour
     {
         [SerializeField] InputAction _action = null;
         [SerializeField] UnityEvent _event = null;
@@ -21,7 +21,7 @@ namespace Khoreo
             _action.performed -= OnPerformed;
         }
 
-        void OnPerformed(InputAction.CallbackContext ctx) => _event.Invoke();
+        void OnPerformed(InputAction.CallbackContext ctx)
+          => _event.Invoke();
     }
 }
-

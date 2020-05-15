@@ -2,8 +2,8 @@ using UnityEditor;
 
 namespace Khoreo
 {
-    [CustomEditor(typeof(InputActionEvent)), CanEditMultipleObjects]
-    sealed class InputActionEventEditor : Editor
+    [CustomEditor(typeof(Trigger)), CanEditMultipleObjects]
+    sealed class TriggerEditor : Editor
     {
         SerializedProperty _action;
         SerializedProperty _event;

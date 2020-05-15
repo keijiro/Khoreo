@@ -3,20 +3,22 @@ using UnityEditor;
 
 namespace Khoreo
 {
-    [CustomEditor(typeof(AudioSensor)), CanEditMultipleObjects]
-    sealed class AudioSensorEditor : Editor
+    [CustomEditor(typeof(AudioThreshold)), CanEditMultipleObjects]
+    sealed class AudioThresholdEditor : Editor
     {
         SerializedProperty _tracker;
         SerializedProperty _threshold;
         SerializedProperty _delay;
-        SerializedProperty _target;
+        SerializedProperty _onEvent;
+        SerializedProperty _offEvent;
 
         void OnEnable()
         {
             _tracker   = serializedObject.FindProperty("_tracker");
             _threshold = serializedObject.FindProperty("_threshold");
             _delay     = serializedObject.FindProperty("_delay");
-            _target    = serializedObject.FindProperty("_target");
+            _onEvent   = serializedObject.FindProperty("_onEvent");
+            _offEvent  = serializedObject.FindProperty("_offEvent");
         }
 
         public override void OnInspectorGUI()
@@ -25,7 +27,9 @@ namespace Khoreo
             EditorGUILayout.PropertyField(_tracker);
             EditorGUILayout.PropertyField(_threshold);
             EditorGUILayout.PropertyField(_delay);
-            EditorGUILayout.PropertyField(_target);
+            EditorGUILayout.Space();
+            EditorGUILayout.PropertyField(_onEvent);
+            EditorGUILayout.PropertyField(_offEvent);
             serializedObject.ApplyModifiedProperties();
         }
     }
