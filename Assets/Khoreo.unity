@@ -789,7 +789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: '{0.0.1.00000000}.{f0a72165-d655-4998-b0fc-ea0c14388c1f}'
+  _deviceID: '{0.0.1.00000000}.{6eca75e1-8102-45bb-8383-8adea469918d}'
   _channel: 0
   _filterType: 0
   _autoGain: 1
@@ -1203,6 +1203,7 @@ MonoBehaviour:
   showAdditionalSettings: 0
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
+  m_AreaLightEmissiveMeshLayer: -1
 --- !u!108 &567163345
 Light:
   m_ObjectHideFlags: 0
@@ -1551,6 +1552,7 @@ MonoBehaviour:
   showAdditionalSettings: 4
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
+  m_AreaLightEmissiveMeshLayer: -1
 --- !u!108 &754564027
 Light:
   m_ObjectHideFlags: 0
@@ -2113,7 +2115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: '{0.0.1.00000000}.{0c777c8a-8095-432c-99f5-88611c123c36}'
+  _deviceID: '{0.0.1.00000000}.{ef24f80f-874e-4bea-9a12-708b88258b29}'
   _channel: 0
   _filterType: 0
   _autoGain: 1
@@ -2168,7 +2170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: '{0.0.1.00000000}.{08f643fc-cf49-4f92-96f9-5a7342afa225}'
+  _deviceID: '{0.0.1.00000000}.{13608d51-6f5e-4bc2-a9c0-a46e35e4475b}'
   _channel: 0
   _filterType: 0
   _autoGain: 1
@@ -3040,7 +3042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: '{0.0.1.00000000}.{43837c4a-6fba-4305-a3e0-4063e34e8294}'
+  _deviceID: '{0.0.1.00000000}.{242970a8-4fce-4aba-a21a-9e9b592f82c4}'
   _channel: 0
   _filterType: 0
   _autoGain: 1
@@ -3213,7 +3215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: '{0.0.1.00000000}.{51d296e5-41ba-4c1d-84bc-b1f9f7235f6d}'
+  _deviceID: '{0.0.1.00000000}.{ed4dc82b-3a47-4eee-9863-8712e5f90bfe}'
   _channel: 0
   _filterType: 0
   _autoGain: 1
@@ -3985,6 +3987,7 @@ MonoBehaviour:
   showAdditionalSettings: 4
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
+  m_AreaLightEmissiveMeshLayer: -1
 --- !u!108 &1962000023
 Light:
   m_ObjectHideFlags: 0
@@ -4522,6 +4525,7 @@ MonoBehaviour:
   showAdditionalSettings: 4
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
+  m_AreaLightEmissiveMeshLayer: -1
 --- !u!108 &2053443785
 Light:
   m_ObjectHideFlags: 0
