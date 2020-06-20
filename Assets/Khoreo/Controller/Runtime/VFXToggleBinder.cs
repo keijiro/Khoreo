@@ -23,6 +23,6 @@ namespace Khoreo
           => component.SetBool(_property, Target.IsOn);
 
         public override string ToString()
-          => $"Bool Value : '{_property}' -> {Target?.name ?? "(null)"}";
+          => $"Toggle : '{_property}' -> {Target?.name ?? "(null)"}";
     }
 }
