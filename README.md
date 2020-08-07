@@ -43,8 +43,8 @@ as follows:
 | Track 4 | Pads    | Others  |
 
 Each effect is only enabled when its assigned audio track is active (not
-silent). In other words, you can disable the effects by cutting the track off
-using the fader.
+silent). In other words, you can instantly deactivate the effects by cutting
+the track off using the fader.
 
 There are a few key controls that modify the effect parameters.
 
@@ -55,5 +55,5 @@ There are a few key controls that modify the effect parameters.
 | Q   | Change hair length |
 | A   | Body trails        |
 | S   | Web-like string    |
-| Z   | Streamline         |
+| Z   | Swirling lines     |
 | X   | Beanstalk thing    |
