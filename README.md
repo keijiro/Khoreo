@@ -14,7 +14,7 @@ MC-101 synthesizer.
 System Requreiments
 -------------------
 
-- Unity 2019.4
+- Unity 2022 LTS
 - Roland MC-101
 - UVC compliant video input device (webcam)
 
