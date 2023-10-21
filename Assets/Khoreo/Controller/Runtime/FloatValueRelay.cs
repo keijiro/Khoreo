@@ -47,8 +47,8 @@ namespace Khoreo
 
         void Update()
         {
-            _currentValue = CdsTween.Step
-              (_currentValue, _targetValue, ref _velocity, _speed);
+            (_currentValue, _velocity) = CdsTween.Step
+              ((_currentValue, _velocity), _targetValue, _speed);
 
             _event.Invoke(_currentValue);
         }

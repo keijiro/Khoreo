@@ -1,7 +1,6 @@
 using UnityEngine;
 using Unity.Mathematics;
 using Klak.Math;
-using Noise = Klak.Math.NoiseHelper;
 
 namespace Puppet
 {
@@ -11,7 +10,7 @@ public sealed partial class Dancer
     #region Animation variables
 
     XXHash _hash;
-    float2 _noise;
+    float3 _noise;
 
     // Foot positions
     float3[] _feet = new float3[2];
@@ -221,7 +220,6 @@ public sealed partial class Dancer
     {
         // Random number/noise generators
         _hash = new XXHash(_randomSeed);
-        _noise = _hash.Float2(-1000, 1000, 0);
 
         // Initial foot positions
         var origin = transform.position * math.float3(1, 0, 1);
@@ -235,7 +233,7 @@ public sealed partial class Dancer
         var dt = Time.deltaTime;
 
         // Update the noise parameter.
-        _noise.x += _noiseFrequency * dt;
+        _noise += _hash.Float3(0.9f, 1.1f, 0) * _noiseFrequency * dt;
 
         // Step parameter delta
         var delta = _stepFrequency * dt;

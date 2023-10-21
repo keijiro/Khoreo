@@ -112,11 +112,11 @@
       "url": "https://registry.npmjs.com"
     },
     "jp.keijiro.klak.math": {
-      "version": "1.0.1",
+      "version": "2.1.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.mathematics": "1.0.1"
+        "com.unity.mathematics": "1.2.6"
       },
       "url": "https://registry.npmjs.com"
     },
