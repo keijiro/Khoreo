@@ -3273,9 +3273,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cc6a7b8b7d145949924441c5a9a29b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _filterShader: {fileID: 4800000, guid: 77b3fc137f469d04d813ff07c8e8721e, type: 3}
+  _deviceName: FaceTime HD Camera
   _threshold: 0.05
   _contrast: 0.8
+  _filterShader: {fileID: 4800000, guid: 77b3fc137f469d04d813ff07c8e8721e, type: 3}
 --- !u!1 &1154030989
 GameObject:
   m_ObjectHideFlags: 0

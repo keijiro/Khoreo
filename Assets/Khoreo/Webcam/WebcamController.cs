@@ -5,9 +5,11 @@ namespace Khoreo
 {
     public sealed class WebcamController : MonoBehaviour
     {
-        [SerializeField] Shader _filterShader = null;
+        [SerializeField] string _deviceName = null;
         [SerializeField, Range(0, 1)] float _threshold = 0.1f;
         [SerializeField, Range(0, 1)] float _contrast = 0.5f;
+
+        [SerializeField, HideInInspector] Shader _filterShader = null;
 
         WebCamTexture _webcam;
         Material _material;
@@ -15,7 +17,7 @@ namespace Khoreo
 
         void Start()
         {
-            _webcam = new WebCamTexture();
+            _webcam = new WebCamTexture(_deviceName);
             _material = new Material(_filterShader);
             _filtered = new RenderTexture(1024, 1024, 0);
             _filtered.useMipMap = true;
