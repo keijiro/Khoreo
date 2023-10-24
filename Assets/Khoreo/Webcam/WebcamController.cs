@@ -17,7 +17,7 @@ namespace Khoreo
 
         void Start()
         {
-            _webcam = new WebCamTexture(_deviceName);
+            _webcam = new WebCamTexture(_deviceName, 1280, 720, 60);
             _material = new Material(_filterShader);
             _filtered = new RenderTexture(1024, 1024, 0);
             _filtered.useMipMap = true;
