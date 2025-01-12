@@ -1,15 +1,13 @@
 using UnityEngine;
 
-namespace Khoreo
+namespace Khoreo {
+
+public sealed class AppController : MonoBehaviour
 {
-    sealed class AppController : MonoBehaviour
-    {
-        void Start()
-        {
-            Application.targetFrameRate = 60;
 #if !UNITY_EDITOR
-            Cursor.visible = false;
+    void Start()
+      => Cursor.visible = false;
 #endif
-        }
-    }
 }
+
+} // namespace Khoreo
