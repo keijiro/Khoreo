@@ -934,7 +934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
   _channel: 2
   _filterType: 0
   _autoGain: 1
@@ -2572,7 +2572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
   _channel: 8
   _filterType: 0
   _autoGain: 1
@@ -2813,7 +2813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
   _channel: 0
   _filterType: 0
   _autoGain: 1
@@ -3072,8 +3072,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tracker: {fileID: 452869581}
-  _threshold: 0
-  _delay: 0.4
   _onEvent:
     m_PersistentCalls:
       m_Calls:
@@ -3104,6 +3102,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  <Threshold>k__BackingField: 0
+  <Delay>k__BackingField: 0.4
 --- !u!23 &1109510131 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -7257649028417552336, guid: 91912a94d043f24419fd1a9ae0b609c6,
@@ -3813,7 +3813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
   _channel: 6
   _filterType: 0
   _autoGain: 1
@@ -3992,7 +3992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
   _channel: 4
   _filterType: 0
   _autoGain: 1
@@ -5089,8 +5089,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tracker: {fileID: 1518991182}
-  _threshold: 0
-  _delay: 0.4
   _onEvent:
     m_PersistentCalls:
       m_Calls:
@@ -5121,6 +5119,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  <Threshold>k__BackingField: 0
+  <Delay>k__BackingField: 0.4
 --- !u!1 &2024192417
 GameObject:
   m_ObjectHideFlags: 0

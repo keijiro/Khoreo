@@ -15,8 +15,8 @@ namespace Khoreo
         void OnEnable()
         {
             _tracker   = serializedObject.FindProperty("_tracker");
-            _threshold = serializedObject.FindProperty("_threshold");
-            _delay     = serializedObject.FindProperty("_delay");
+            _threshold = serializedObject.FindProperty("<Threshold>k__BackingField");
+            _delay     = serializedObject.FindProperty("<Delay>k__BackingField");
             _onEvent   = serializedObject.FindProperty("_onEvent");
             _offEvent  = serializedObject.FindProperty("_offEvent");
         }
