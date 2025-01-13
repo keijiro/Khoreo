@@ -4447,7 +4447,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _speed: 3
+  <Speed>k__BackingField: 3
   _trigger:
     m_Name: Trigger
     m_Type: 0
@@ -5010,7 +5010,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _speed: 3
+  <Speed>k__BackingField: 3
   _trigger:
     m_Name: Trigger
     m_Type: 0
