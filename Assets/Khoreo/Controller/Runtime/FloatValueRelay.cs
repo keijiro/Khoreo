@@ -6,17 +6,11 @@ namespace Khoreo
 {
     public sealed class FloatValueRelay : MonoBehaviour
     {
-        #region Local class
-
-        [System.Serializable] class FloatEvent : UnityEvent<float> {}
-
-        #endregion
-
         #region Editable attributes
 
         [SerializeField] float _speed = 10;
         [SerializeField] float _targetValue = 0;
-        [SerializeField] FloatEvent _event = null;
+        [SerializeField] FloatValueEvent _event = null;
 
         #endregion
 

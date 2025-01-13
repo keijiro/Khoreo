@@ -4,9 +4,6 @@ using UnityEngine.InputSystem;
 
 namespace Khoreo {
 
-[System.Serializable]
-public sealed class FloatValueEvent : UnityEvent<float> {}
-
 public sealed class FloatValueAnimation : MonoBehaviour
 {
     #region Editable attributes
