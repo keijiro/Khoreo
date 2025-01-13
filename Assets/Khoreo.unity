@@ -408,12 +408,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 145274445}
-  - component: {fileID: 145274446}
   - component: {fileID: 145274443}
+  - component: {fileID: 145274450}
   - component: {fileID: 145274444}
-  - component: {fileID: 145274448}
   - component: {fileID: 145274447}
   - component: {fileID: 145274449}
+  - component: {fileID: 145274448}
   m_Layer: 0
   m_Name: Stream
   m_TagString: Untagged
@@ -523,20 +523,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1452055726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &145274446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145274442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49eb6eced1164c6498f39eecf476a481, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _target: {fileID: 1792229817}
-  _offset: 0
 --- !u!114 &145274447
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -584,6 +570,26 @@ MonoBehaviour:
   _property:
     m_Name: Spawn
   Target: {fileID: 2070650611}
+--- !u!1818360608 &145274450
+PositionConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145274442}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Weight: 1
+  m_TranslationAtRest: {x: 0, y: 0, z: 0}
+  m_TranslationOffset: {x: 0, y: 0, z: 0}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 0
+  m_AffectTranslationZ: 1
+  m_Active: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 1792229817}
+    weight: 1
 --- !u!1 &183709794
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,7 +940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
   _channel: 2
   _filterType: 0
   _autoGain: 1
@@ -2572,7 +2578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
   _channel: 8
   _filterType: 0
   _autoGain: 1
@@ -2813,7 +2819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
   _channel: 0
   _filterType: 0
   _autoGain: 1
@@ -2834,11 +2840,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1072178838}
-  - component: {fileID: 1072178841}
   - component: {fileID: 1072178836}
-  - component: {fileID: 1072178837}
+  - component: {fileID: 1072178842}
   - component: {fileID: 1072178840}
   - component: {fileID: 1072178839}
+  - component: {fileID: 1072178837}
   - component: {fileID: 1072178835}
   m_Layer: 0
   m_Name: Waveform VFX
@@ -3012,20 +3018,26 @@ MonoBehaviour:
   _sampleCountProperty:
     m_Name: SampleCount
   Target: {fileID: 1054016455}
---- !u!114 &1072178841
-MonoBehaviour:
+--- !u!1818360608 &1072178842
+PositionConstraint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072178834}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49eb6eced1164c6498f39eecf476a481, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _target: {fileID: 1792229817}
-  _offset: 0
+  serializedVersion: 2
+  m_Weight: 1
+  m_TranslationAtRest: {x: 0, y: 0, z: 0}
+  m_TranslationOffset: {x: 0, y: 0, z: 0}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 0
+  m_AffectTranslationZ: 1
+  m_Active: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 1792229817}
+    weight: 1
 --- !u!1 &1091081242
 GameObject:
   m_ObjectHideFlags: 0
@@ -3568,8 +3580,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85fb56910d67a1b45b4bfd60e26405a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
-  <TargetValue>k__BackingField: 2
   _event:
     m_PersistentCalls:
       m_Calls:
@@ -3585,6 +3595,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  <Speed>k__BackingField: 10
+  <TargetValue>k__BackingField: 2
 --- !u!114 &1364651567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3813,7 +3825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
   _channel: 6
   _filterType: 0
   _autoGain: 1
@@ -3992,7 +4004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
   _channel: 4
   _filterType: 0
   _autoGain: 1
@@ -4447,7 +4459,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  <Speed>k__BackingField: 3
   _trigger:
     m_Name: Trigger
     m_Type: 0
@@ -4480,6 +4491,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  <Speed>k__BackingField: 3
 --- !u!1 &1769852150
 GameObject:
   m_ObjectHideFlags: 0
@@ -5010,7 +5022,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  <Speed>k__BackingField: 3
   _trigger:
     m_Name: Trigger
     m_Type: 0
@@ -5043,6 +5054,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  <Speed>k__BackingField: 3
 --- !u!1 &1995715750
 GameObject:
   m_ObjectHideFlags: 0
