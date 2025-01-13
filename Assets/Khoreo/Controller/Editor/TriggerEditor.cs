@@ -1,26 +1,25 @@
 using UnityEditor;
+using KlutterTools.InspectorUtils;
 
-namespace Khoreo
+namespace Khoreo {
+
+[CustomEditor(typeof(Trigger)), CanEditMultipleObjects]
+sealed class TriggerEditor : Editor
 {
-    [CustomEditor(typeof(Trigger)), CanEditMultipleObjects]
-    sealed class TriggerEditor : Editor
+    AutoProperty _action = null;
+    AutoProperty _event = null;
+
+    void OnEnable()
+      => AutoProperty.Scan(this);
+
+    public override void OnInspectorGUI()
     {
-        SerializedProperty _action;
-        SerializedProperty _event;
-
-        void OnEnable()
-        {
-            _action = serializedObject.FindProperty("_action");
-            _event  = serializedObject.FindProperty("_event");
-        }
-
-        public override void OnInspectorGUI()
-        {
-            serializedObject.Update();
-            EditorGUILayout.PropertyField(_action);
-            EditorGUILayout.Space();
-            EditorGUILayout.PropertyField(_event);
-            serializedObject.ApplyModifiedProperties();
-        }
+        serializedObject.Update();
+        EditorGUILayout.PropertyField(_action);
+        EditorGUILayout.Space();
+        EditorGUILayout.PropertyField(_event);
+        serializedObject.ApplyModifiedProperties();
     }
 }
+
+} // namespace Khoreo
