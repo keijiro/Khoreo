@@ -2,27 +2,25 @@ using UnityEngine;
 using UnityEngine.VFX;
 using UnityEngine.VFX.Utility;
 
-namespace Khoreo
+namespace Khoreo {
+
+[AddComponentMenu("VFX/Property Binders/Khoreo/Toggle Binder")]
+[VFXBinder("Khoreo/Toggle")]
+sealed class VFXToggleBinder : VFXBinderBase
 {
-    [AddComponentMenu("VFX/Property Binders/Khoreo/Toggle Binder")]
-    [VFXBinder("Khoreo/Toggle")]
-    sealed class VFXToggleBinder : VFXBinderBase
-    {
-        public string Property
-          { get => (string)_property; set => _property = value; }
+    [VFXPropertyBinding("System.Boolean"), SerializeField]
+    public ExposedProperty Property = "BoolValue";
 
-        [VFXPropertyBinding("System.Boolean"), SerializeField]
-        ExposedProperty _property = "BoolValue";
+    public Toggle Target = null;
 
-        public Toggle Target = null;
+    public override bool IsValid(VisualEffect component)
+      => Target != null && component.HasBool(Property);
 
-        public override bool IsValid(VisualEffect component)
-          => Target != null && component.HasBool(_property);
+    public override void UpdateBinding(VisualEffect component)
+      => component.SetBool(Property, Target.IsOn);
 
-        public override void UpdateBinding(VisualEffect component)
-          => component.SetBool(_property, Target.IsOn);
-
-        public override string ToString()
-          => $"Toggle : '{_property}' -> {Target?.name ?? "(null)"}";
-    }
+    public override string ToString()
+      => $"Toggle : '{Property}' -> {Target?.name ?? "(null)"}";
 }
+
+} // namespace Khoreo

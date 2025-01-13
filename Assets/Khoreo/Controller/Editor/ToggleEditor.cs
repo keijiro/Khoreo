@@ -1,33 +1,30 @@
 using UnityEditor;
+using KlutterTools.InspectorUtils;
 
-namespace Khoreo
+namespace Khoreo {
+
+[CustomEditor(typeof(Toggle)), CanEditMultipleObjects]
+sealed class ToggleEditor : Editor
 {
-    [CustomEditor(typeof(Toggle)), CanEditMultipleObjects]
-    sealed class ToggleEditor : Editor
+    AutoProperty _isOn = null;
+    AutoProperty _action = null;
+    AutoProperty _offEvent = null;
+    AutoProperty _onEvent = null;
+
+    void OnEnable()
+      => AutoProperty.Scan(this);
+
+    public override void OnInspectorGUI()
     {
-        SerializedProperty _state;
-        SerializedProperty _action;
-        SerializedProperty _offEvent;
-        SerializedProperty _onEvent;
-
-        void OnEnable()
-        {
-            _state    = serializedObject.FindProperty("_state");
-            _action   = serializedObject.FindProperty("_action");
-            _offEvent = serializedObject.FindProperty("_offEvent");
-            _onEvent  = serializedObject.FindProperty("_onEvent");
-        }
-
-        public override void OnInspectorGUI()
-        {
-            serializedObject.Update();
-            EditorGUILayout.PropertyField(_state);
-            EditorGUILayout.Space();
-            EditorGUILayout.PropertyField(_action);
-            EditorGUILayout.Space();
-            EditorGUILayout.PropertyField(_offEvent);
-            EditorGUILayout.PropertyField(_onEvent);
-            serializedObject.ApplyModifiedProperties();
-        }
+        serializedObject.Update();
+        EditorGUILayout.PropertyField(_isOn);
+        EditorGUILayout.Space();
+        EditorGUILayout.PropertyField(_action);
+        EditorGUILayout.Space();
+        EditorGUILayout.PropertyField(_offEvent);
+        EditorGUILayout.PropertyField(_onEvent);
+        serializedObject.ApplyModifiedProperties();
     }
 }
+
+} // namespace Khoreo

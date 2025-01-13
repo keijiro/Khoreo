@@ -567,7 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17c1a4cc7177fd4faa3e8593b5b102f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _property:
+  Property:
     m_Name: Spawn
   Target: {fileID: 2070650611}
 --- !u!1818360608 &145274450
@@ -876,7 +876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17c1a4cc7177fd4faa3e8593b5b102f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _property:
+  Property:
     m_Name: Spawn
   Target: {fileID: 821213782}
 --- !u!114 &297034260
@@ -2155,7 +2155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _state: 0
+  <IsOn>k__BackingField: 0
   _action:
     m_Name: Action
     m_Type: 0
@@ -2372,7 +2372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17c1a4cc7177fd4faa3e8593b5b102f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _property:
+  Property:
     m_Name: FlareSpawnSwitch
   Target: {fileID: 1364651567}
 --- !u!1 &910259925
@@ -2634,7 +2634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _state: 0
+  <IsOn>k__BackingField: 0
   _action:
     m_Name: Action
     m_Type: 0
@@ -2735,7 +2735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _state: 0
+  <IsOn>k__BackingField: 0
   _action:
     m_Name: Action
     m_Type: 0
@@ -3609,7 +3609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _state: 0
+  <IsOn>k__BackingField: 0
   _action:
     m_Name: Action
     m_Type: 0
@@ -3701,7 +3701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _state: 0
+  <IsOn>k__BackingField: 0
   _action:
     m_Name: Action
     m_Type: 0
@@ -4877,7 +4877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _state: 0
+  <IsOn>k__BackingField: 0
   _action:
     m_Name: Action
     m_Type: 0
@@ -5568,7 +5568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _state: 0
+  <IsOn>k__BackingField: 0
   _action:
     m_Name: Action
     m_Type: 0
@@ -5845,7 +5845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17c1a4cc7177fd4faa3e8593b5b102f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _property:
+  Property:
     m_Name: SpawnWeb
   Target: {fileID: 1050684240}
 --- !u!114 &2137415755
@@ -5860,7 +5860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17c1a4cc7177fd4faa3e8593b5b102f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _property:
+  Property:
     m_Name: SpawnTrails
   Target: {fileID: 1939617692}
 --- !u!1660057539 &9223372036854775807

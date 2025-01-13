@@ -6,9 +6,9 @@ namespace Khoreo {
 [CustomEditor(typeof(FloatValueSetter)), CanEditMultipleObjects]
 sealed class FloatValueSetterEditor : Editor
 {
-    AutoProperty _speed;
-    AutoProperty _targetValue;
-    AutoProperty _event;
+    AutoProperty _speed = null;
+    AutoProperty _targetValue = null;
+    AutoProperty _event = null;
 
     void OnEnable()
       => AutoProperty.Scan(this);
