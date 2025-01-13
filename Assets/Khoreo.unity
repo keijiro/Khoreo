@@ -3071,8 +3071,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aaa4c4873e43a74fbd95bb9bced39c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tracker: {fileID: 452869581}
-  _onEvent:
+  <Tracker>k__BackingField: {fileID: 452869581}
+  <OnEvent>k__BackingField:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2031262618}
@@ -3087,7 +3087,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  _offEvent:
+  <OffEvent>k__BackingField:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2031262618}
@@ -5088,8 +5088,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aaa4c4873e43a74fbd95bb9bced39c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tracker: {fileID: 1518991182}
-  _onEvent:
+  <Tracker>k__BackingField: {fileID: 1518991182}
+  <OnEvent>k__BackingField:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 43819061}
@@ -5104,7 +5104,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  _offEvent:
+  <OffEvent>k__BackingField:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 43819061}

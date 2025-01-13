@@ -6,17 +6,12 @@ namespace Khoreo {
 
 public sealed class AudioThreshold : MonoBehaviour
 {
-    #region Scene object references
-
-    [SerializeField] AudioLevelTracker _tracker = null;
-    [SerializeField] UnityEvent _onEvent = null;
-    [SerializeField] UnityEvent _offEvent = null;
-
-    #endregion
-
     #region Public properties
 
-    [field:SerializeField] public float Threshold { get; set; } = 0;
+    [field:SerializeField] public AudioLevelTracker Tracker { get; set; }
+    [field:SerializeField] public UnityEvent OnEvent { get; set; }
+    [field:SerializeField] public UnityEvent OffEvent { get; set; }
+    [field:SerializeField] public float Threshold { get; set; }
     [field:SerializeField] public float Delay { get; set; } = 0.4f;
 
     #endregion
@@ -36,21 +31,21 @@ public sealed class AudioThreshold : MonoBehaviour
         if (_flag)
         {
             _flag = false;
-            _offEvent.Invoke();
+            OffEvent.Invoke();
         }
     }
 
     void Start()
-      => _offEvent.Invoke(); // Starts from the off state.
+      => OffEvent.Invoke(); // Starts from the off state.
 
     void Update()
     {
         if (!_flag)
         {
             // Currently off: Turn on when the input hits the threshold.
-            if (_tracker.normalizedLevel > Threshold)
+            if (Tracker.normalizedLevel > Threshold)
             {
-                _onEvent.Invoke();
+                OnEvent.Invoke();
                 _timer = Delay;
                 _flag = true;
             }
@@ -58,7 +53,7 @@ public sealed class AudioThreshold : MonoBehaviour
         else
         {
             // Currently on: Turn off when the timer ends.
-            if (_tracker.normalizedLevel > Threshold)
+            if (Tracker.normalizedLevel > Threshold)
             {
                 _timer = Delay;
             }
@@ -67,7 +62,7 @@ public sealed class AudioThreshold : MonoBehaviour
                 _timer -= Time.deltaTime;
                 if (_timer <= 0)
                 {
-                    _offEvent.Invoke();
+                    OffEvent.Invoke();
                     _flag = false;
                 }
             }

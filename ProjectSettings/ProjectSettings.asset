@@ -873,7 +873,7 @@ PlayerSettings:
     iPhone: 1
     tvOS: 1
   incrementalIl2cppBuild: {}
-  suppressCommonWarnings: 1
+  suppressCommonWarnings: 0
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
   additionalIl2CppArgs: 
