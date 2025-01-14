@@ -2506,7 +2506,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _speed: 5
+  <Speed>k__BackingField: 5
   _volume: {fileID: 1160437669}
   _trigger:
     m_Name: Trigger
@@ -4301,7 +4301,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _speed: 5
+  <Speed>k__BackingField: 5
   _volume: {fileID: 695825084}
   _trigger:
     m_Name: Trigger
