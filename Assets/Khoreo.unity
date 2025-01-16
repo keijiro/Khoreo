@@ -655,7 +655,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 267084105}
-  - component: {fileID: 267084106}
+  - component: {fileID: 267084107}
   m_Layer: 0
   m_Name: Webcam Pivot
   m_TagString: Untagged
@@ -671,27 +671,39 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267084104}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 520204184}
   m_Father: {fileID: 274613386}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &267084106
-MonoBehaviour:
+  m_LocalEulerAnglesHint: {x: 1.9090024, y: 0, z: -0}
+--- !u!895512359 &267084107
+AimConstraint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267084104}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07669e25b9eb498488b9a34ae186df27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _target: {fileID: 555480079}
+  serializedVersion: 2
+  m_Weight: 1
+  m_RotationAtRest: {x: -0, y: 180, z: -0}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AimVector: {x: 0, y: 0, z: 1}
+  m_UpVector: {x: 0, y: 1, z: 0}
+  m_WorldUpVector: {x: 0, y: 1, z: 0}
+  m_WorldUpObject: {fileID: 0}
+  m_UpType: 0
+  m_AffectRotationX: 0
+  m_AffectRotationY: 1
+  m_AffectRotationZ: 0
+  m_Active: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 555480079}
+    weight: 1
 --- !u!1 &274613384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2155,7 +2167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <IsOn>k__BackingField: 0
   _action:
     m_Name: Action
     m_Type: 0
@@ -2179,6 +2190,7 @@ MonoBehaviour:
   _onEvent:
     m_PersistentCalls:
       m_Calls: []
+  <IsOn>k__BackingField: 0
 --- !u!1 &877443263
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,8 +2518,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  <Speed>k__BackingField: 5
-  _volume: {fileID: 1160437669}
   _trigger:
     m_Name: Trigger
     m_Type: 0
@@ -2533,6 +2543,8 @@ MonoBehaviour:
       m_Action: Trigger
       m_Flags: 0
     m_Flags: 0
+  _volume: {fileID: 1160437669}
+  <Speed>k__BackingField: 5
 --- !u!1 &994331888
 GameObject:
   m_ObjectHideFlags: 0
@@ -2634,7 +2646,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <IsOn>k__BackingField: 0
   _action:
     m_Name: Action
     m_Type: 0
@@ -2706,6 +2717,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  <IsOn>k__BackingField: 0
 --- !u!1 &1050684239
 GameObject:
   m_ObjectHideFlags: 0
@@ -2735,7 +2747,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <IsOn>k__BackingField: 0
   _action:
     m_Name: Action
     m_Type: 0
@@ -2759,6 +2770,7 @@ MonoBehaviour:
   _onEvent:
     m_PersistentCalls:
       m_Calls: []
+  <IsOn>k__BackingField: 0
 --- !u!4 &1050684241
 Transform:
   m_ObjectHideFlags: 0
@@ -3609,7 +3621,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <IsOn>k__BackingField: 0
   _action:
     m_Name: Action
     m_Type: 0
@@ -3657,6 +3668,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  <IsOn>k__BackingField: 0
 --- !u!1 &1372572233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3701,7 +3713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <IsOn>k__BackingField: 0
   _action:
     m_Name: Action
     m_Type: 0
@@ -3749,6 +3760,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  <IsOn>k__BackingField: 0
 --- !u!1 &1429809051
 GameObject:
   m_ObjectHideFlags: 0
@@ -4042,7 +4054,7 @@ Transform:
   m_GameObject: {fileID: 1525576097}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -12}
+  m_LocalPosition: {x: 0, y: 1.4, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4301,8 +4313,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  <Speed>k__BackingField: 5
-  _volume: {fileID: 695825084}
   _trigger:
     m_Name: Trigger
     m_Type: 0
@@ -4336,6 +4346,8 @@ MonoBehaviour:
       m_Action: Trigger
       m_Flags: 0
     m_Flags: 0
+  _volume: {fileID: 695825084}
+  <Speed>k__BackingField: 5
 --- !u!4 &1718124069 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: b0f140b9118c1b14ebfbe570b3ce941e,
@@ -4877,7 +4889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <IsOn>k__BackingField: 0
   _action:
     m_Name: Action
     m_Type: 0
@@ -4901,6 +4912,7 @@ MonoBehaviour:
   _onEvent:
     m_PersistentCalls:
       m_Calls: []
+  <IsOn>k__BackingField: 0
 --- !u!4 &1939617693
 Transform:
   m_ObjectHideFlags: 0
@@ -5568,7 +5580,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <IsOn>k__BackingField: 0
   _action:
     m_Name: Action
     m_Type: 0
@@ -5592,6 +5603,7 @@ MonoBehaviour:
   _onEvent:
     m_PersistentCalls:
       m_Calls: []
+  <IsOn>k__BackingField: 0
 --- !u!1 &2132746213
 GameObject:
   m_ObjectHideFlags: 0
