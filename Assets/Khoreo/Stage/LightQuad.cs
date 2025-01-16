@@ -1,22 +1,23 @@
 using UnityEngine;
 
-namespace Khoreo
+namespace Khoreo {
+
+public sealed class LightQuad : MonoBehaviour
 {
-    class LightQuad : MonoBehaviour
+    Light _light;
+    Renderer _renderer;
+
+    void Start()
     {
-        Light _light;
-        Renderer _renderer;
+        _light = transform.parent.GetComponent<Light>();
+        _renderer = GetComponent<Renderer>();
+    }
 
-        void Start()
-        {
-            _light = transform.parent.GetComponent<Light>();
-            _renderer = GetComponent<Renderer>();
-        }
-
-        void LateUpdate()
-        {
-            var color = _light.color.linear * _light.intensity;
-            _renderer.material.SetColor("_EmissiveColor", color);
-        }
+    void LateUpdate()
+    {
+        var color = _light.color.linear * _light.intensity;
+        _renderer.material.SetColor("_EmissiveColor", color);
     }
 }
+
+} // namespace Khoreo
