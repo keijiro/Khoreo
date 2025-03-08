@@ -188,6 +188,18 @@
       },
       "url": "https://registry.npmjs.com"
     },
+    "jp.keijiro.klak.testtools": {
+      "version": "3.1.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.audio": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.unitywebrequesttexture": "1.0.0",
+        "com.unity.modules.video": "1.0.0"
+      },
+      "url": "https://registry.npmjs.com"
+    },
     "jp.keijiro.klutter-tools": {
       "version": "2.0.0",
       "depth": 0,
@@ -221,6 +233,13 @@
       "dependencies": {},
       "url": "https://registry.npmjs.com"
     },
+    "jp.keijiro.metawire": {
+      "version": "2.1.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.com"
+    },
     "jp.keijiro.minis": {
       "version": "1.0.10",
       "depth": 0,
@@ -231,11 +250,28 @@
       },
       "url": "https://registry.npmjs.com"
     },
+    "jp.keijiro.noiseshader": {
+      "version": "3.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.com"
+    },
     "jp.keijiro.rtmidi": {
       "version": "1.0.4",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://registry.npmjs.com"
+    },
+    "jp.keijiro.shadergraphassets": {
+      "version": "2.5.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.shadergraph": "12.1.0",
+        "jp.keijiro.noiseshader": "2.0.0"
+      },
       "url": "https://registry.npmjs.com"
     },
     "jp.keijiro.smrvfx": {
@@ -248,6 +284,16 @@
       },
       "url": "https://registry.npmjs.com"
     },
+    "jp.keijiro.vfxgraphassets": {
+      "version": "3.8.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.visualeffectgraph": "17.0.0",
+        "jp.keijiro.shadergraphassets": "2.5.2"
+      },
+      "url": "https://registry.npmjs.com"
+    },
     "com.unity.modules.animation": {
       "version": "1.0.0",
       "depth": 2,
@@ -256,7 +302,7 @@
     },
     "com.unity.modules.audio": {
       "version": "1.0.0",
-      "depth": 3,
+      "depth": 1,
       "source": "builtin",
       "dependencies": {}
     },
@@ -298,7 +344,7 @@
     },
     "com.unity.modules.ui": {
       "version": "1.0.0",
-      "depth": 3,
+      "depth": 2,
       "source": "builtin",
       "dependencies": {}
     },
@@ -315,13 +361,22 @@
     },
     "com.unity.modules.unitywebrequest": {
       "version": "1.0.0",
-      "depth": 3,
+      "depth": 1,
       "source": "builtin",
       "dependencies": {}
     },
+    "com.unity.modules.unitywebrequesttexture": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0"
+      }
+    },
     "com.unity.modules.video": {
       "version": "1.0.0",
-      "depth": 2,
+      "depth": 1,
       "source": "builtin",
       "dependencies": {
         "com.unity.modules.audio": "1.0.0",

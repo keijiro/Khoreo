@@ -16,7 +16,11 @@
     "jp.keijiro.klutter-tools": "2.0.0",
     "jp.keijiro.laspvfx": "1.0.2",
     "jp.keijiro.libsoundio": "1.0.5",
+    "jp.keijiro.metawire": "2.1.1",
     "jp.keijiro.minis": "1.0.10",
-    "jp.keijiro.smrvfx": "1.1.6"
+    "jp.keijiro.smrvfx": "1.1.6",
+    "jp.keijiro.noiseshader": "3.0.0",
+    "jp.keijiro.klak.testtools": "3.1.0",
+    "jp.keijiro.vfxgraphassets": "3.8.0"
   }
 }
