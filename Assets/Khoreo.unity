@@ -3833,6 +3833,10 @@ GameObject:
   - component: {fileID: 1304613349}
   - component: {fileID: 1304613348}
   - component: {fileID: 1304613347}
+  - component: {fileID: 1304613355}
+  - component: {fileID: 1304613354}
+  - component: {fileID: 1304613353}
+  - component: {fileID: 1304613352}
   m_Layer: 0
   m_Name: Projector
   m_TagString: Untagged
@@ -3935,7 +3939,31 @@ VisualEffect:
     m_Vector4f:
       m_Array: []
     m_Uint:
-      m_Array: []
+      m_Array:
+      - m_Value: 765
+        m_Name: WaveCount1
+        m_Overridden: 1
+      - m_Value: 4096
+        m_Name: WaveWidth1
+        m_Overridden: 1
+      - m_Value: 765
+        m_Name: WaveCount2
+        m_Overridden: 1
+      - m_Value: 4096
+        m_Name: WaveWidth2
+        m_Overridden: 1
+      - m_Value: 765
+        m_Name: WaveCount4
+        m_Overridden: 1
+      - m_Value: 4096
+        m_Name: WaveWidth3
+        m_Overridden: 1
+      - m_Value: 765
+        m_Name: WaveCount3
+        m_Overridden: 1
+      - m_Value: 4096
+        m_Name: WaveWidth4
+        m_Overridden: 1
     m_Int:
       m_Array: []
     m_Matrix4x4f:
@@ -3945,7 +3973,19 @@ VisualEffect:
     m_Gradient:
       m_Array: []
     m_NamedObject:
-      m_Array: []
+      m_Array:
+      - m_Value: {fileID: 0}
+        m_Name: WaveTex1
+        m_Overridden: 1
+      - m_Value: {fileID: 0}
+        m_Name: WaveTex2
+        m_Overridden: 1
+      - m_Value: {fileID: 0}
+        m_Name: WaveTex3
+        m_Overridden: 1
+      - m_Value: {fileID: 0}
+        m_Name: WaveTex4
+        m_Overridden: 1
     m_Bool:
       m_Array: []
 --- !u!114 &1304613347
@@ -4026,7 +4066,87 @@ MonoBehaviour:
   - {fileID: 1304613349}
   - {fileID: 1304613348}
   - {fileID: 1304613347}
+  - {fileID: 1304613355}
+  - {fileID: 1304613354}
+  - {fileID: 1304613353}
+  - {fileID: 1304613352}
   m_VisualEffect: {fileID: 1304613346}
+--- !u!114 &1304613352
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304613343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb4193cf465d0e44ac81e3b29d40a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textureProperty:
+    m_Name: WaveTex4
+  _textureWidthProperty:
+    m_Name: WaveWidth4
+  _sampleCountProperty:
+    m_Name: WaveCount4
+  Target: {fileID: 994331890}
+--- !u!114 &1304613353
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304613343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb4193cf465d0e44ac81e3b29d40a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textureProperty:
+    m_Name: WaveTex3
+  _textureWidthProperty:
+    m_Name: WaveWidth3
+  _sampleCountProperty:
+    m_Name: WaveCount3
+  Target: {fileID: 1448116055}
+--- !u!114 &1304613354
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304613343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb4193cf465d0e44ac81e3b29d40a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textureProperty:
+    m_Name: WaveTex2
+  _textureWidthProperty:
+    m_Name: WaveWidth2
+  _sampleCountProperty:
+    m_Name: WaveCount2
+  Target: {fileID: 1518991182}
+--- !u!114 &1304613355
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304613343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb4193cf465d0e44ac81e3b29d40a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textureProperty:
+    m_Name: WaveTex1
+  _textureWidthProperty:
+    m_Name: WaveWidth1
+  _sampleCountProperty:
+    m_Name: WaveCount1
+  Target: {fileID: 452869581}
 --- !u!1 &1364651564
 GameObject:
   m_ObjectHideFlags: 0
