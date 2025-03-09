@@ -3828,6 +3828,11 @@ GameObject:
   - component: {fileID: 1304613344}
   - component: {fileID: 1304613346}
   - component: {fileID: 1304613345}
+  - component: {fileID: 1304613351}
+  - component: {fileID: 1304613350}
+  - component: {fileID: 1304613349}
+  - component: {fileID: 1304613348}
+  - component: {fileID: 1304613347}
   m_Layer: 0
   m_Name: Projector
   m_TagString: Untagged
@@ -3910,7 +3915,19 @@ VisualEffect:
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 0
+        m_Name: AudioLevel1
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: AudioLevel2
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: AudioLevel3
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: AudioLevel4
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -3931,6 +3948,85 @@ VisualEffect:
       m_Array: []
     m_Bool:
       m_Array: []
+--- !u!114 &1304613347
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304613343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2091ac4b848396c4586dba9485bea90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _property:
+    m_Name: AudioLevel4
+  Target: {fileID: 994331890}
+--- !u!114 &1304613348
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304613343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2091ac4b848396c4586dba9485bea90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _property:
+    m_Name: AudioLevel3
+  Target: {fileID: 1448116055}
+--- !u!114 &1304613349
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304613343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2091ac4b848396c4586dba9485bea90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _property:
+    m_Name: AudioLevel2
+  Target: {fileID: 1518991182}
+--- !u!114 &1304613350
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304613343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2091ac4b848396c4586dba9485bea90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _property:
+    m_Name: AudioLevel1
+  Target: {fileID: 452869581}
+--- !u!114 &1304613351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304613343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 1304613350}
+  - {fileID: 1304613349}
+  - {fileID: 1304613348}
+  - {fileID: 1304613347}
+  m_VisualEffect: {fileID: 1304613346}
 --- !u!1 &1364651564
 GameObject:
   m_ObjectHideFlags: 0
