@@ -4576,8 +4576,8 @@ MonoBehaviour:
   _event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 754564026}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 754564027}
+        m_TargetAssemblyTypeName: UnityEngine.Light, UnityEngine
         m_MethodName: set_intensity
         m_Mode: 0
         m_Arguments:
@@ -5139,8 +5139,8 @@ MonoBehaviour:
   _event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2053443784}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2053443785}
+        m_TargetAssemblyTypeName: UnityEngine.Light, UnityEngine
         m_MethodName: set_intensity
         m_Mode: 0
         m_Arguments:
