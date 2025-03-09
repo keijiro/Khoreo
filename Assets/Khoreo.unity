@@ -2206,6 +2206,7 @@ GameObject:
   - component: {fileID: 877443267}
   - component: {fileID: 877443269}
   - component: {fileID: 877443270}
+  - component: {fileID: 877443271}
   m_Layer: 0
   m_Name: Wig VFX
   m_TagString: Untagged
@@ -2290,10 +2291,10 @@ VisualEffect:
       m_Array:
       - m_Value: 128
         m_Name: SegmentCount
-        m_Overridden: 1
+        m_Overridden: 0
       - m_Value: 128
         m_Name: VertexCount
-        m_Overridden: 1
+        m_Overridden: 0
     m_Int:
       m_Array: []
     m_Matrix4x4f:
@@ -2306,7 +2307,7 @@ VisualEffect:
       m_Array:
       - m_Value: {fileID: 0}
         m_Name: PositionMap
-        m_Overridden: 1
+        m_Overridden: 0
     m_Bool:
       m_Array: []
 --- !u!4 &877443266
@@ -2356,6 +2357,7 @@ MonoBehaviour:
   - {fileID: 877443267}
   - {fileID: 877443269}
   - {fileID: 877443270}
+  - {fileID: 877443271}
   m_VisualEffect: {fileID: 877443265}
 --- !u!114 &877443269
 MonoBehaviour:
@@ -2387,6 +2389,25 @@ MonoBehaviour:
   Property:
     m_Name: FlareSpawnSwitch
   Target: {fileID: 1364651567}
+--- !u!114 &877443271
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877443263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ffbc397cb7829469b272d5fa748d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Source: {fileID: 910259926}
+  PositionMapProperty:
+    m_Name: PositionMap
+  VertexCountProperty:
+    m_Name: VertexCount
+  SegmentCountProperty:
+    m_Name: SegmentCount
 --- !u!1 &910259925
 GameObject:
   m_ObjectHideFlags: 0
@@ -2417,7 +2438,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _source: {fileID: 1109510131}
-  _target: {fileID: 877443265}
   _segmentCount: 32
   _randomSeed: 0
   _profile:
@@ -3661,8 +3681,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 910259926}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: set_length
+        m_TargetAssemblyTypeName: BurstWig.WigController, BurstWig.Runtime
+        m_MethodName: set_Length
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

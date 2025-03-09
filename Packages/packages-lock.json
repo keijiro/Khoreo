@@ -161,6 +161,15 @@
       "dependencies": {},
       "url": "https://registry.npmjs.com"
     },
+    "jp.keijiro.burst-wig": {
+      "version": "file:jp.keijiro.burst-wig",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "jp.keijiro.klak.math": "2.1.0",
+        "jp.keijiro.klutter-tools": "2.1.0"
+      }
+    },
     "jp.keijiro.kino.post-processing": {
       "version": "2.1.15",
       "depth": 0,
@@ -201,8 +210,8 @@
       "url": "https://registry.npmjs.com"
     },
     "jp.keijiro.klutter-tools": {
-      "version": "2.0.0",
-      "depth": 0,
+      "version": "2.1.0",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://registry.npmjs.com"
