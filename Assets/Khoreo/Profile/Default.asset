@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72a5edd2df1ecb6459822dbfa17e07ea, type: 3}
   m_Name: Overlay
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   sourceType:
     m_OverrideState: 0
     m_Value: 1
@@ -398,8 +398,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 2
   streaksLength:
-    m_OverrideState: 0
-    m_Value: 0.5
+    m_OverrideState: 1
+    m_Value: 1
   streaksOrientation:
     m_OverrideState: 0
     m_Value: 0
@@ -453,7 +453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b8bcdf71d7fafa419fca1ed162f5fc9, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   postExposure:
     m_OverrideState: 0
     m_Value: 0
