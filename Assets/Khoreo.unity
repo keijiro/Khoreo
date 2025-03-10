@@ -246,21 +246,6 @@ Transform:
   - {fileID: 2116813259}
   m_Father: {fileID: 1995715751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!115 &44001681
-MonoScript:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 7
-  m_DefaultReferences: {}
-  m_Icon: {fileID: 0}
-  m_Type: 2
-  m_ExecutionOrder: 0
-  m_ClassName: VFXSkinnedMeshBinder
-  m_Namespace: Smrvfx
-  m_AssemblyName: Smrvfx.Runtime
 --- !u!1 &47500969 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: b0f140b9118c1b14ebfbe570b3ce941e,
@@ -1712,54 +1697,6 @@ Light:
   m_LightUnit: 0
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 0
---- !u!1 &605125698
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 605125700}
-  - component: {fileID: 605125699}
-  m_Layer: 0
-  m_Name: Smrvfx
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &605125699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 605125698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8be8853279617ea196652fe43520855, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sources:
-  - {fileID: 1793084351}
-  _pointCount: 65536
-  _compute: {fileID: 7200000, guid: feda2e5c3aa86f2d4865487ae1f2e229, type: 3}
---- !u!4 &605125700
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 605125698}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1809453687}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &695825083
 GameObject:
   m_ObjectHideFlags: 0
@@ -3753,25 +3690,25 @@ VisualEffect:
       m_Array: []
     m_Uint:
       m_Array:
-      - m_Value: 753
+      - m_Value: 745
         m_Name: WaveCount1
         m_Overridden: 1
       - m_Value: 4096
         m_Name: WaveWidth1
         m_Overridden: 1
-      - m_Value: 753
+      - m_Value: 745
         m_Name: WaveCount2
         m_Overridden: 1
       - m_Value: 4096
         m_Name: WaveWidth2
         m_Overridden: 1
-      - m_Value: 753
+      - m_Value: 745
         m_Name: WaveCount4
         m_Overridden: 1
       - m_Value: 4096
         m_Name: WaveWidth3
         m_Overridden: 1
-      - m_Value: 753
+      - m_Value: 745
         m_Name: WaveCount3
         m_Overridden: 1
       - m_Value: 4096
@@ -5129,7 +5066,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 47500972}
-  - {fileID: 605125700}
   - {fileID: 2137415750}
   - {fileID: 910259927}
   - {fileID: 877443266}
@@ -6196,7 +6132,6 @@ GameObject:
   - component: {fileID: 2137415749}
   - component: {fileID: 2137415748}
   - component: {fileID: 2137415752}
-  - component: {fileID: 2137415751}
   - component: {fileID: 2137415753}
   - component: {fileID: 2137415755}
   - component: {fileID: 2137415754}
@@ -6295,6 +6230,9 @@ VisualEffect:
       - m_Value: {fileID: 0}
         m_Name: VelocityMap
         m_Overridden: 1
+      - m_Value: {fileID: 1793084351}
+        m_Name: Body
+        m_Overridden: 1
     m_Bool:
       m_Array:
       - m_Value: 0
@@ -6318,30 +6256,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1809453687}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2137415751
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2137415747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 44001681}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _positionMapProperty:
-    m_Name: PositionMap
-  _bindVelocityMap: 1
-  _velocityMapProperty:
-    m_Name: VelocityMap
-  _bindNormalMap: 0
-  _normalMapProperty:
-    m_Name: NormalMap
-  _bindVertexCount: 0
-  _vertexCountProperty:
-    m_Name: VertexCount
-  Target: {fileID: 605125699}
 --- !u!114 &2137415752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6356,7 +6270,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 0
   m_Bindings:
-  - {fileID: 2137415751}
   - {fileID: 2137415753}
   - {fileID: 2137415755}
   - {fileID: 2137415754}
