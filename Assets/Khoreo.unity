@@ -948,7 +948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
   _channel: 2
   _filterType: 0
   _autoGain: 1
@@ -2625,7 +2625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
   _channel: 8
   _filterType: 0
   _autoGain: 1
@@ -2866,7 +2866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
   _channel: 0
   _filterType: 0
   _autoGain: 1
@@ -2983,10 +2983,10 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: 3.5
         m_Name: RadialSpeed
-        m_Overridden: 1
+        m_Overridden: 0
       - m_Value: 1.8
         m_Name: Height
-        m_Overridden: 1
+        m_Overridden: 0
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -3690,25 +3690,25 @@ VisualEffect:
       m_Array: []
     m_Uint:
       m_Array:
-      - m_Value: 745
+      - m_Value: 752
         m_Name: WaveCount1
         m_Overridden: 1
       - m_Value: 4096
         m_Name: WaveWidth1
         m_Overridden: 1
-      - m_Value: 745
+      - m_Value: 752
         m_Name: WaveCount2
         m_Overridden: 1
       - m_Value: 4096
         m_Name: WaveWidth2
         m_Overridden: 1
-      - m_Value: 745
+      - m_Value: 752
         m_Name: WaveCount4
         m_Overridden: 1
       - m_Value: 4096
         m_Name: WaveWidth3
         m_Overridden: 1
-      - m_Value: 745
+      - m_Value: 752
         m_Name: WaveCount3
         m_Overridden: 1
       - m_Value: 4096
@@ -4187,7 +4187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
   _channel: 6
   _filterType: 0
   _autoGain: 1
@@ -4366,7 +4366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useDefaultDevice: 0
-  _deviceID: jp_co_roland_RDUSB022BDev_Device:00100000
+  _deviceID: jp_co_roland_RDUSB022BDev_Device:01100000
   _channel: 4
   _filterType: 0
   _autoGain: 1
