@@ -20,7 +20,7 @@ MonoBehaviour:
     x: 1040
     y: 566
     width: 724
-    height: 2245
+    height: 2244
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -135,7 +135,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 12000
+      m_SerializableObject: 15000
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -1323,7 +1323,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 12000
+      m_SerializableObject: 15000
     m_Space: -1
   m_Property:
     name: o
@@ -1914,8 +1914,8 @@ MonoBehaviour:
   m_ActivationSlot: {fileID: 8926484042661615640}
   m_BlockName: Custom HLSL
   m_HLSLCode: "void SetSpiralPosition(inout VFXAttributes attributes, uint spawnIndex,
-    uint spawnRate, float2 freqSpeed, float time)\n{\n  float index = spawnRate *
-    time + spawnIndex;\n  float theta = PI * 2 * freqSpeed.x / spawnRate * index;\n 
+    uint spawnRate, float2 freqSpeed, float time)\n{\n  float freq = 2 * PI * freqSpeed.x;\n 
+    float theta = fmod(freq * time, 2 * PI);\n  theta += freq * spawnIndex / spawnRate;\n 
     float offset = freqSpeed.y * spawnIndex / spawnRate;\n  attributes.position =
     float3(cos(theta), 0, sin(theta)) * (1 - offset);\n}"
   m_ShaderFile: {fileID: 0}
