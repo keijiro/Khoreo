@@ -732,7 +732,7 @@ GameObject:
   - component: {fileID: 297034260}
   - component: {fileID: 297034259}
   m_Layer: 0
-  m_Name: Arc
+  m_Name: Arch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
