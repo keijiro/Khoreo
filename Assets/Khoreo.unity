@@ -3690,25 +3690,25 @@ VisualEffect:
       m_Array: []
     m_Uint:
       m_Array:
-      - m_Value: 0
+      - m_Value: 862
         m_Name: WaveCount1
         m_Overridden: 1
       - m_Value: 4096
         m_Name: WaveWidth1
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 862
         m_Name: WaveCount2
         m_Overridden: 1
       - m_Value: 4096
         m_Name: WaveWidth2
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 862
         m_Name: WaveCount4
         m_Overridden: 1
       - m_Value: 4096
         m_Name: WaveWidth3
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 862
         m_Name: WaveCount3
         m_Overridden: 1
       - m_Value: 4096
@@ -4237,6 +4237,7 @@ Transform:
   - {fileID: 145274445}
   - {fileID: 297034258}
   - {fileID: 543056334}
+  - {fileID: 1500745113}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1500745112
@@ -4270,7 +4271,7 @@ Transform:
   m_Children:
   - {fileID: 1792229817}
   - {fileID: 1072178838}
-  m_Father: {fileID: 1809453687}
+  m_Father: {fileID: 1452055726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1518005897
 GameObject:
@@ -5069,7 +5070,6 @@ Transform:
   - {fileID: 2137415750}
   - {fileID: 910259927}
   - {fileID: 877443266}
-  - {fileID: 1500745113}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1919031995
