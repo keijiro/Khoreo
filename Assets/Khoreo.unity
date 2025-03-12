@@ -751,7 +751,7 @@ VFXRenderer:
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
-  m_MotionVectors: 0
+  m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
@@ -3690,25 +3690,25 @@ VisualEffect:
       m_Array: []
     m_Uint:
       m_Array:
-      - m_Value: 752
+      - m_Value: 0
         m_Name: WaveCount1
         m_Overridden: 1
       - m_Value: 4096
         m_Name: WaveWidth1
         m_Overridden: 1
-      - m_Value: 752
+      - m_Value: 0
         m_Name: WaveCount2
         m_Overridden: 1
       - m_Value: 4096
         m_Name: WaveWidth2
         m_Overridden: 1
-      - m_Value: 752
+      - m_Value: 0
         m_Name: WaveCount4
         m_Overridden: 1
       - m_Value: 4096
         m_Name: WaveWidth3
         m_Overridden: 1
-      - m_Value: 752
+      - m_Value: 0
         m_Name: WaveCount3
         m_Overridden: 1
       - m_Value: 4096
