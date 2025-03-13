@@ -728,7 +728,7 @@ MonoBehaviour:
       x: 3283
       y: -2004
       width: 974
-      height: 1830
+      height: 1842
     contents:
     - model: {fileID: 114350483966675273}
       id: 0
@@ -1000,7 +1000,7 @@ MonoBehaviour:
     x: 2050
     y: -2027
     width: 5131
-    height: 6791
+    height: 6792
 --- !u!114 &114350483966675019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5332,7 +5332,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 3808, y: -495}
+  m_UIPosition: {x: 3808, y: -483}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -5409,7 +5409,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":10906,"guid":"0000000000000000f000000000000000","type":0}}'
+      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"dbc769a25330945d7826e02170cb0bb4","type":3}}'
     m_Space: -1
   m_Property:
     name: mainTexture
@@ -15546,7 +15546,7 @@ MonoBehaviour:
   - {fileID: 114350483966675837}
   m_ExposedName: Tint
   m_Exposed: 1
-  m_Order: 1
+  m_Order: 5
   m_Category: 
   m_Min:
     m_Type:
@@ -22067,7 +22067,7 @@ MonoBehaviour:
   - {fileID: 114350483966676133}
   m_ExposedName: PixelsResolution
   m_Exposed: 0
-  m_Order: 2
+  m_Order: 10
   m_Category: 
   m_Min:
     m_Type:
@@ -25223,7 +25223,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 2711, y: 1901}
+  m_UIPosition: {x: 2711, y: 1902}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -26298,7 +26298,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children:
   - {fileID: 114350483966676435}
-  m_UIPosition: {x: 2711, y: 2051}
+  m_UIPosition: {x: 2711, y: 2052}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -34528,7 +34528,7 @@ MonoBehaviour:
   - {fileID: 114350483966676790}
   m_ExposedName: AudioLevel1
   m_Exposed: 1
-  m_Order: 0
+  m_Order: 1
   m_Category: Track 1
   m_Min:
     m_Type:
@@ -34611,7 +34611,7 @@ MonoBehaviour:
   - {fileID: 114350483966676792}
   m_ExposedName: AudioLevel2
   m_Exposed: 1
-  m_Order: 0
+  m_Order: 2
   m_Category: Track 2
   m_Min:
     m_Type:
@@ -34694,7 +34694,7 @@ MonoBehaviour:
   - {fileID: 114350483966676794}
   m_ExposedName: AudioLevel3
   m_Exposed: 1
-  m_Order: 0
+  m_Order: 3
   m_Category: Track 3
   m_Min:
     m_Type:
@@ -34777,7 +34777,7 @@ MonoBehaviour:
   - {fileID: 114350483966676796}
   m_ExposedName: AudioLevel4
   m_Exposed: 1
-  m_Order: 0
+  m_Order: 4
   m_Category: Track 4
   m_Min:
     m_Type:
@@ -35256,7 +35256,7 @@ MonoBehaviour:
   - {fileID: 114350483966676834}
   m_ExposedName: WaveTex1
   m_Exposed: 1
-  m_Order: 1
+  m_Order: 6
   m_Category: Track 1
   m_Min:
     m_Type:
@@ -35337,7 +35337,7 @@ MonoBehaviour:
   - {fileID: 114350483966676836}
   m_ExposedName: WaveWidth1
   m_Exposed: 1
-  m_Order: 2
+  m_Order: 11
   m_Category: Track 1
   m_Min:
     m_Type:
@@ -35409,7 +35409,7 @@ MonoBehaviour:
   - {fileID: 114350483966676838}
   m_ExposedName: WaveCount1
   m_Exposed: 1
-  m_Order: 3
+  m_Order: 15
   m_Category: Track 1
   m_Min:
     m_Type:
@@ -35490,7 +35490,7 @@ MonoBehaviour:
   - {fileID: 114350483966676840}
   m_ExposedName: WaveCount2
   m_Exposed: 1
-  m_Order: 3
+  m_Order: 16
   m_Category: Track 2
   m_Min:
     m_Type:
@@ -35571,7 +35571,7 @@ MonoBehaviour:
   - {fileID: 114350483966676842}
   m_ExposedName: WaveWidth2
   m_Exposed: 1
-  m_Order: 2
+  m_Order: 12
   m_Category: Track 2
   m_Min:
     m_Type:
@@ -35643,7 +35643,7 @@ MonoBehaviour:
   - {fileID: 114350483966676844}
   m_ExposedName: WaveTex2
   m_Exposed: 1
-  m_Order: 1
+  m_Order: 7
   m_Category: Track 2
   m_Min:
     m_Type:
@@ -35724,7 +35724,7 @@ MonoBehaviour:
   - {fileID: 114350483966676846}
   m_ExposedName: WaveCount3
   m_Exposed: 1
-  m_Order: 3
+  m_Order: 17
   m_Category: Track 3
   m_Min:
     m_Type:
@@ -35805,7 +35805,7 @@ MonoBehaviour:
   - {fileID: 114350483966676848}
   m_ExposedName: WaveWidth3
   m_Exposed: 1
-  m_Order: 2
+  m_Order: 13
   m_Category: Track 3
   m_Min:
     m_Type:
@@ -35877,7 +35877,7 @@ MonoBehaviour:
   - {fileID: 114350483966676850}
   m_ExposedName: WaveTex3
   m_Exposed: 1
-  m_Order: 1
+  m_Order: 8
   m_Category: Track 3
   m_Min:
     m_Type:
@@ -35958,7 +35958,7 @@ MonoBehaviour:
   - {fileID: 114350483966676852}
   m_ExposedName: WaveCount4
   m_Exposed: 1
-  m_Order: 3
+  m_Order: 18
   m_Category: Track 4
   m_Min:
     m_Type:
@@ -36039,7 +36039,7 @@ MonoBehaviour:
   - {fileID: 114350483966676854}
   m_ExposedName: WaveWidth4
   m_Exposed: 1
-  m_Order: 2
+  m_Order: 14
   m_Category: Track 4
   m_Min:
     m_Type:
@@ -36111,7 +36111,7 @@ MonoBehaviour:
   - {fileID: 114350483966676856}
   m_ExposedName: WaveTex4
   m_Exposed: 1
-  m_Order: 1
+  m_Order: 9
   m_Category: Track 4
   m_Min:
     m_Type:
