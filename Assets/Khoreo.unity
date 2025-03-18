@@ -2529,9 +2529,9 @@ Transform:
   - {fileID: 1939617693}
   - {fileID: 1050684241}
   - {fileID: 2070650610}
-  - {fileID: 821213780}
   - {fileID: 1149748134}
   - {fileID: 1402202604}
+  - {fileID: 821213780}
   m_Father: {fileID: 2104313247}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &766996989
@@ -2666,7 +2666,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: e112d3f6-1d40-4181-a15e-f782c4faf6f8
-      m_Path: <Keyboard>/x
+      m_Path: <Keyboard>/v
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -4059,7 +4059,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: e112d3f6-1d40-4181-a15e-f782c4faf6f8
-      m_Path: <Keyboard>/c
+      m_Path: <Keyboard>/x
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -4886,7 +4886,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: e112d3f6-1d40-4181-a15e-f782c4faf6f8
-      m_Path: <Keyboard>/v
+      m_Path: <Keyboard>/c
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -5023,12 +5023,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 145274445}
-  - {fileID: 297034258}
   - {fileID: 543056334}
   - {fileID: 1500745113}
+  - {fileID: 145274445}
   - {fileID: 1080938218}
   - {fileID: 601333573}
+  - {fileID: 297034258}
   m_Father: {fileID: 1154030990}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1500745112
