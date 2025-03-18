@@ -1845,6 +1845,9 @@ GameObject:
   - component: {fileID: 601333573}
   - component: {fileID: 601333572}
   - component: {fileID: 601333571}
+  - component: {fileID: 601333576}
+  - component: {fileID: 601333575}
+  - component: {fileID: 601333574}
   m_Layer: 0
   m_Name: Sweeper
   m_TagString: Untagged
@@ -1932,7 +1935,10 @@ VisualEffect:
     m_NamedObject:
       m_Array: []
     m_Bool:
-      m_Array: []
+      m_Array:
+      - m_Value: 0
+        m_Name: Spawn
+        m_Overridden: 1
 --- !u!4 &601333573
 Transform:
   m_ObjectHideFlags: 0
@@ -1941,13 +1947,60 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601333570}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1452055726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &601333574
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601333570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2091ac4b848396c4586dba9485bea90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _property:
+    m_Name: Intensity
+  Target: {fileID: 994331890}
+--- !u!114 &601333575
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601333570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c17c1a4cc7177fd4faa3e8593b5b102f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Property:
+    m_Name: Spawn
+  Target: {fileID: 1402202605}
+--- !u!114 &601333576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601333570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 0
+  m_Bindings:
+  - {fileID: 601333575}
+  - {fileID: 601333574}
+  m_VisualEffect: {fileID: 601333572}
 --- !u!1 &690096351
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,6 +2531,7 @@ Transform:
   - {fileID: 2070650610}
   - {fileID: 821213780}
   - {fileID: 1149748134}
+  - {fileID: 1402202604}
   m_Father: {fileID: 2104313247}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &766996989
@@ -4778,6 +4832,74 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   <IsOn>k__BackingField: 0
+--- !u!1 &1402202603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1402202604}
+  - component: {fileID: 1402202605}
+  m_Layer: 0
+  m_Name: Sweepers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1402202604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402202603}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 766503732}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1402202605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402202603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe553cbdc0b8394ab8b63292954b247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _action:
+    m_Name: Action
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: e8579e06-56aa-46ad-b673-7c3e6529703c
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: e112d3f6-1d40-4181-a15e-f782c4faf6f8
+      m_Path: <Keyboard>/v
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
+    m_Flags: 0
+  _offEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _onEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  <IsOn>k__BackingField: 0
 --- !u!1 &1429809051
 GameObject:
   m_ObjectHideFlags: 0
@@ -4906,6 +5028,7 @@ Transform:
   - {fileID: 543056334}
   - {fileID: 1500745113}
   - {fileID: 1080938218}
+  - {fileID: 601333573}
   m_Father: {fileID: 1154030990}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1500745112
@@ -7244,4 +7367,3 @@ SceneRoots:
   - {fileID: 1525576098}
   - {fileID: 1138243576}
   - {fileID: 1809453687}
-  - {fileID: 601333573}
