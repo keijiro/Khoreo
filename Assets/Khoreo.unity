@@ -4110,7 +4110,7 @@ MonoBehaviour:
   _sourceVideo: {fileID: 0}
   <SourceCamera>k__BackingField: {fileID: 0}
   _sourceUrl: 
-  _sourceName: MacBook Pro Camera
+  _sourceName: OsmoPocket3
   _deviceResolution: {x: 1920, y: 1080}
   _deviceFrameRate: 30
 --- !u!1 &1149748132
